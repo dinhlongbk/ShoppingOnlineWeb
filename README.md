@@ -1,8 +1,10 @@
 # ShoppingOnlineWeb
 ## I. My team
 
-Đặng Lê Minh Trường                                                                                                                 
+Đặng Lê Minh Trường
+
 Nguyễn Chí Cường
+
 Phạm Minh Khoa
 
 ## II. Đề tài                                                                                                                             
