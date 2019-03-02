@@ -1,9 +1,11 @@
 # ShoppingOnlineWeb
-# I. My team                                                                                                                               
+## I. My team
+
 Đặng Lê Minh Trường                                                                                                                       
 Nguyễn Chí Cường                                                                                                                           
 Phạm Minh Khoa                                                                                                                             
-# II. Đề tài                                                                                                                               
+
+## II. Đề tài                                                                                                                             
   SV hãy xây dựng 1 trong các ứng dụng web sau: (sử dụng kiến thức HTML, CSS, jQuery, …)                                                   
 1.Viết ứng dụng web bán hàng online bao gồm các chức năng sau:                                                                             
 a.Khách hàng:                                                                                                                             
@@ -15,6 +17,6 @@ a.Khách hàng:
   vi.Xem thông tin các địa chỉ của cửa hàng.                                                                                               
 b.Quản trị:                                                                                                                               
 i.Quản lý thông tin các nhóm hàng, mặt hàng (cập nhật mặt hàng mới, giá, …).                                                              
-# Lưu ý:                                                                                                                                   
+## Lưu ý:                                                                                                                                 
 Không cần tải về thư mực /lib nếu có mạng                                                                                                 
 /lib vẫn còn thiếu tập tin jquery
