@@ -1,9 +1,9 @@
 # ShoppingOnlineWeb
 ## I. My team
 
-Đặng Lê Minh Trường                                                                                                                       
-Nguyễn Chí Cường                                                                                                                           
-Phạm Minh Khoa                                                                                                                             
+Đặng Lê Minh Trường                                                                                                                 
+Nguyễn Chí Cường
+Phạm Minh Khoa
 
 ## II. Đề tài                                                                                                                             
   SV hãy xây dựng 1 trong các ứng dụng web sau: (sử dụng kiến thức HTML, CSS, jQuery, …)                                                   
