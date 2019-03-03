@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- style nếu tải source về -->
-    <link rel="stylesheet" href="../lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../lib/font/fontawesome-free-5.6.3-web/css/all.css">
-    <!-- ----------------------- -->
+    <link rel="stylesheet" href="../vendor/bootstrap-4.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font/fontawesome-free-5.7.2/css/all.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <!-- Nếu có mạng khỏi tải source -->
@@ -19,23 +18,25 @@
 
     <title>Online Shopping</title>
 </head>
+
 <body>
     <div class="bgtop">
+        <!-- NAVIGATION BAR -->
         <header class="menu">
             <div class="header">
                 <div class="container-fluid top">
                     <div class="row">
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                <div class="leftheader text-left">
-                                    <i class="fas fa-map-marker-alt"></i> Việt Nam Anh
-                                    <i class="fas fa-phone"></i> +84 1900 1000
-                                </div>
+                            <div class="leftheader text-left">
+                                <i class="fas fa-map-marker-alt"></i> Việt Nam Anh
+                                <i class="fas fa-phone"></i> +84 1900 1000
+                            </div>
                         </div>
                         <!-- end col -->
 
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                             <h3 class="logo text-center">
-                                    Buffalo Coder
+                                Buffalo Coder
                             </h3>
                             <!-- end logo -->
                         </div>
@@ -49,94 +50,95 @@
 
             <div class="menubar" id="mymenubar">
                 <div class="container">
-                        <nav class="navbar navbar-expand-sm navbar-color navbar-dark">
-                                <button class="btnmau navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                                    aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-center">
-                                        <li class="nav-item motphantu declick" data-hienlen="all">
-                                            <a class="nav-link"  href="#">Trang chủ</a>
-                                        </li>
-                                        <li class="nav-item motphantu declick" data-hienlen="tintuc">
-                                            <a class="nav-link"  href="#">Tin tức</a>
-                                            <div class="list" id="tintuc">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">Khuyến Mãi</li>
-                                                    <li class="list-group-item">Fashion 2019</li>
-                                                    <li class="list-group-item">Fashion 2018</li>
-                                                    <li class="list-group-item">Fashion 2017</li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item motphantu declick" data-hienlen="men">
-                                            <a class="nav-link" href="#">Giày Nam</a>
-                                            <div class="list" id="men">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">Sandal</li>
-                                                    <li class="list-group-item">Boot</li>
-                                                    <li class="list-group-item">Giày thể thao</li>
-                                                    <li class="list-group-item">Dép</li>
-                                                    <li class="list-group-item">Giày lười</li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item motphantu declick" data-hienlen="women">
-                                            <a class="nav-link"  href="#">Giày nữ</a>
-                                            <div class="list" id="women">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">Giày Cao gót</li>
-                                                    <li class="list-group-item">Dép</li>
-                                                    <li class="list-group-item">Sandal</li>
-                                                    <li class="list-group-item">Giày thể thao</li>
-                                                    <li class="list-group-item">Giày búp bê</li>
-                                                    <li class="list-group-item">Giày lười</li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item motphantu declick" data-hienlen="chidren">
-                                            <a class="nav-link"  href="#">Trẻ em</a>
-                                            <div class="list" id="chidren">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">Giày búp bê</li>
-                                                    <li class="list-group-item">Dép</li>
-                                                    <li class="list-group-item">Sandal</li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item motphantu declick" data-hienlen="phukien">
-                                            <a class="nav-link" href="#">Phụ Kiện</a>
-                                            <div class="list" id="phukien">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item">Vớ</li>
-                                                    <li class="list-group-item">Bao Tay</li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item motphantu declick" data-hienlen="about">
-                                            <a class="nav-link"  href="#">About</a>
-                                        </li>
-                                        <li class="login nav-item">
-                                            <a class="nav-link" href="../../Login/html/login1.html">Đăng nhập</a>
-                                        </li>
-                                        <li class="ip nav-item">
-                                            <a class="nav-link" href="#">Giỏ hàng</a>
-                                        </li>
-                                        <form class="form-inline my-2 my-lg-0">
-                                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                                        </form>
-                                    </ul>
-                                </div>
-                            </nav>
-                            <!-- end nav -->
+                    <nav class="navbar navbar-expand-sm navbar-color navbar-dark">
+                        <button class="btnmau navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-center">
+                                <li class="nav-item motphantu declick" data-hienlen="all">
+                                    <a class="nav-link" href="#">Trang chủ</a>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="tintuc">
+                                    <a class="nav-link" href="#">Tin tức</a>
+                                    <div class="list" id="tintuc">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Khuyến Mãi</li>
+                                            <li class="list-group-item">Fashion 2019</li>
+                                            <li class="list-group-item">Fashion 2018</li>
+                                            <li class="list-group-item">Fashion 2017</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="men">
+                                    <a class="nav-link" href="#">Giày Nam</a>
+                                    <div class="list" id="men">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Sandal</li>
+                                            <li class="list-group-item">Boot</li>
+                                            <li class="list-group-item">Giày thể thao</li>
+                                            <li class="list-group-item">Dép</li>
+                                            <li class="list-group-item">Giày lười</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="women">
+                                    <a class="nav-link" href="#">Giày nữ</a>
+                                    <div class="list" id="women">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Giày Cao gót</li>
+                                            <li class="list-group-item">Dép</li>
+                                            <li class="list-group-item">Sandal</li>
+                                            <li class="list-group-item">Giày thể thao</li>
+                                            <li class="list-group-item">Giày búp bê</li>
+                                            <li class="list-group-item">Giày lười</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="chidren">
+                                    <a class="nav-link" href="#">Trẻ em</a>
+                                    <div class="list" id="chidren">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Giày búp bê</li>
+                                            <li class="list-group-item">Dép</li>
+                                            <li class="list-group-item">Sandal</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="phukien">
+                                    <a class="nav-link" href="#">Phụ Kiện</a>
+                                    <div class="list" id="phukien">
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Vớ</li>
+                                            <li class="list-group-item">Bao Tay</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="about">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="login nav-item">
+                                    <a class="nav-link" href="../../Login/html/login1.html">Đăng nhập</a>
+                                </li>
+                                <li class="ip nav-item">
+                                    <a class="nav-link" href="#">Giỏ hàng</a>
+                                </li>
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- end nav -->
                 </div>
                 <!-- end container -->
             </div>
             <!-- end menubar -->
         </header>
-        <!-- end -->
+
         <div class="container text-center present">
             <h2 class="mainLogo">Coder 2019</h2>
             <button class="btn btn-light">Giày Nam</button>
@@ -191,89 +193,90 @@
     <button class="btnup btn">^</button>
 
     <div class="content">
-            <div class="container text-center">
-                <h3 class="title">Giày Thể Thao</h3>
-                <div class="row">
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="../img/sport1.jpg" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Giày thể thao Nam BO-113</h4>
-                                <p class="card-text">245.000 VND</p>
-                            </div>
+        <div class="container text-center">
+            <h3 class="title">Giày Thể Thao</h3>
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/sport1.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Giày thể thao Nam BO-113</h4>
+                            <p class="card-text">245.000 VND</p>
                         </div>
                     </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="../img/sport1.jpg" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
-                                <p class="card-text">245.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="../img/sport1.jpg" alt="">
-                            <div class="card-body">
-                                <h4 class="card-title">Giày thể thao BO-113</h4>
-                                <p class="card-text">245.000 VND</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end row     -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <a class="btn btn-light">Xem tất cả sản phẩm</a>
-                    </div>
-                    <!-- end btn -->
                 </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/sport1.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
+                            <p class="card-text">245.000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/sport1.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Giày thể thao BO-113</h4>
+                            <p class="card-text">245.000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row     -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <a class="btn btn-light">Xem tất cả sản phẩm</a>
+                </div>
+                <!-- end btn -->
             </div>
-            <!-- end container-fluid -->
         </div>
-        <!-- end content -->
+        <!-- end container-fluid -->
+    </div>
+    <!-- end content -->
 
-        <div class="content">
-                <div class="container text-center">
-                    <h3 class="title">Sandal</h3>
-                    <div class="row">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/sandal.jpg" alt="">
-                                <div class="card-body">
-                                    <h4 class="card-title">Giày thể thao Nam BO-113</h4>
-                                    <p class="card-text">245.000 VND</p>
-                                </div>
-                            </div>
+    <div class="content">
+        <div class="container text-center">
+            <h3 class="title">Sandal</h3>
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/sandal.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Giày thể thao Nam BO-113</h4>
+                            <p class="card-text">245.000 VND</p>
                         </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/sandal.jpg" alt="">
-                                <div class="card-body">
-                                    <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
-                                    <p class="card-text">245.000 VND</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/sandal.jpg" alt="">
-                                <div class="card-body">
-                                    <h4 class="card-title">Giày thể thao BO-113</h4>
-                                    <p class="card-text">245.000 VND</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end row     -->
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                            <a class="btn btn-light">Xem tất cả sản phẩm</a>
-                        </div>
-                        <!-- end btn -->
                     </div>
                 </div>
-                <!-- end container-fluid -->
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/sandal.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
+                            <p class="card-text">245.000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="../img/sandal.jpg" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Giày thể thao BO-113</h4>
+                            <p class="card-text">245.000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row     -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <a class="btn btn-light">Xem tất cả sản phẩm</a>
+                </div>
+                <!-- end btn -->
             </div>
-            <!-- end content -->
+        </div>
+        <!-- end container-fluid -->
+    </div>
+    <!-- end content -->
 
+    
     <!-- begin footer -->
     <footer class="footer">
         <div class="container">
@@ -315,10 +318,12 @@
         <!-- end container -->
     </footer>
     <!-- end footer -->
-    <!-- script -->
-    <script type="text/javascript" src="../lib/jquery-3.1.1/jquery-3.1.1.js"></script>
-    <script src="../lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
-    <!-- -------------------------------- -->
-    <script src="../js/index.js"></script>
+
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="../vendor/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
 </body>
+
 </html>

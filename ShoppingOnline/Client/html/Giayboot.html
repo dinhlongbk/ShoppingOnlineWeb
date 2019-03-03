@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- style nếu tải source về -->
-    <link rel="stylesheet" href="../lib/bootstrap-4.2.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../lib/font/fontawesome-free-5.6.3-web/css/all.css">
-    <!-- ----------------------- -->
+    <link rel="stylesheet" href="../vendor/bootstrap-4.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font/fontawesome-free-5.7.2/css/all.css">
     <link rel="stylesheet" href="../css/giayboot.css">
 
     <!-- Nếu có mạng khỏi tải source -->
@@ -20,6 +18,7 @@
     <title>Giày Boots</title>
 </head>
 <body>
+    <!-- NAVIGATION -->
     <header class="menu">
         <div class="menubar" id="mymenubar">
             <div class="container">
@@ -106,169 +105,40 @@
         </div>
         <!-- end menubar -->
     </header>
-    <!-- end -->
-    <!-- content -->
+
+    <!-- CONTENT -->
     <div id="content">
         <div class="container">
+
+            <!-- THANH TÌM KIẾM -->
             <div id="search">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="text" placeholder="Nhập sản phẩm cần tìm">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
                 </form>
             </div>
+
             <h3>Giày Boots</h3>
             <div class="row">
                 <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
                     <input type="hidden" name="" id="current_page" value="0">
                     <input type="hidden" name="" id="show_per_page" value="12">
-                    <div class="row review">
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    
+                    <!-- DANH SÁCH SẢN PHẨM -->
+                    <div class="row review" id="list-product">
+                        <div v-for="product of products" 
+                            class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
                             <div class="card">
-                                <img class="card-img-top" src="../img/giayboot1.PNG" alt="">
+                                <img class="card-img-top" v-bind:src="product.hinhAnh" alt="">
                                 <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
+                                    <p>{{product.tenSanPham}}</p>
+                                    <p class="card-text">{{product.giaTien}}<sup>đ</sup></p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot2.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot3.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot4.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot5.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
-                       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" src="../img/giayboot6.PNG" alt="">
-                                <div class="card-body">
-                                    <p>Giày Boot Nữ - 12B1</p>
-                                    <p class="card-text">245.000<sup>đ</sup></p>
-                                </div>
-                          </div>
-                       </div>
                     </div>
                 </div>
-                <!-- end danh sách sản phẩm -->
+
                 <div class="khungchinh col-xs-3 col-sm-3 col-md-3 col-lg-3">
                     <div class="khungtitle">
                         <b>Lọc Sản phẩm</b>
@@ -467,9 +337,8 @@
         </div>
         <!-- end container -->
     </div>
-    <!-- end content -->
 
-    <!-- begin footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -509,12 +378,12 @@
         </div>
         <!-- end container -->
     </footer>
-    <!-- end footer -->
-     <!-- script -->
-     <script type="text/javascript" src="../lib/jquery-3.1.1/jquery-3.1.1.js"></script>
-     <script src="../lib/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
-     <!-- -------------------------------- -->
-     <script src="../js/index.js"></script>
-     <script src="../js/giayboot.js"></script>
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="../vendor/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../vendor/vue.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/giayboot.js"></script>
 </body>
 </html>
