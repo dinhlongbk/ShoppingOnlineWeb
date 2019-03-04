@@ -236,8 +236,8 @@ footer.footer {
     position: relative;
     margin-top: -18px;
     color:#fff;
-    left: 190px;
     height: 28px;
+    padding-left: 17%;
 }
 
 .navbar-dark .navbar-toggler {

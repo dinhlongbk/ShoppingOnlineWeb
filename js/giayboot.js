@@ -1,23 +1,23 @@
 //========== DATA ==========//
 let products = {
     "boots": [
-        {maSanPham: "1111", tenSanPham: "bootwomen",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen.png"},
-        {maSanPham: "1112", tenSanPham: "bootwomen4560",giaTien: 250000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4560.png"},
-        {maSanPham: "1112", tenSanPham: "bootwomen4558",giaTien: 250000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4558.png"},
-        {maSanPham: "1112", tenSanPham: "bootwomen4558",giaTien: 250000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4558.png"},
-        {maSanPham: "1113", tenSanPham: "bootwomen4556",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4556.png"},
-        {maSanPham: "1114", tenSanPham: "bootwomen4555",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4555.png"},
-        {maSanPham: "1115", tenSanPham: "bootwomen4554",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4554.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4553",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4554.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4552",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4552.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4551",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4551.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4550",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4550.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4549",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4549.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4558",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4558.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4547",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4547.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4546",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4546.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4545",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4545.png"},
-        {maSanPham: "1116", tenSanPham: "bootwomen4544",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootwomen4544.png"},
+        {maSanPham: "1111", tenSanPham: "Giày Boot Nữ 1111",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen.png"},
+        {maSanPham: "1113", tenSanPham: "Giày Boot Nữ 1113",giaTien: 250000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4560.png"},
+        {maSanPham: "1114", tenSanPham: "Giày Boot Nữ 1114",giaTien: 250000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4558.png"},
+        {maSanPham: "1115", tenSanPham: "Giày Boot Nữ 1115",giaTien: 250000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4558.png"},
+        {maSanPham: "1116", tenSanPham: "Giày Boot Nữ 1116",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4556.png"},
+        {maSanPham: "1117", tenSanPham: "Giày Boot Nữ 1117",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4555.png"},
+        {maSanPham: "1118", tenSanPham: "Giày Boot Nữ 1118",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4554.png"},
+        {maSanPham: "1119", tenSanPham: "Giày Boot Nữ 1119",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4554.png"},
+        {maSanPham: "1110", tenSanPham: "Giày Boot Nữ 1110",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4552.png"},
+        {maSanPham: "1200", tenSanPham: "Giày Boot Nữ 1200",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4551.png"},
+        {maSanPham: "1211", tenSanPham: "Giày Boot Nữ 1211",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4550.png"},
+        {maSanPham: "1212", tenSanPham: "Giày Boot Nữ 1212",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4549.png"},
+        {maSanPham: "1213", tenSanPham: "Giày Boot Nữ 1213",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4558.png"},
+        {maSanPham: "1214", tenSanPham: "Giày Boot Nữ 1214",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4547.png"},
+        {maSanPham: "1215", tenSanPham: "Giày Boot Nữ 1215",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4546.png"},
+        {maSanPham: "1216", tenSanPham: "Giày Boot Nữ 1216",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4545.png"},
+        {maSanPham: "1217", tenSanPham: "Giày Boot Nữ 1217",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4544.png"},
     ],
     "sport": [
          {maSanPham: "2111", tenSanPham: "Giày Thể Thao TT- 3236",giaTien: 250000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/sport/Giày Thể Thao TT- 3236.png"},
@@ -121,7 +121,7 @@ function Pager(tableName, itemsPerPage) {
         let paging_element = $("#paging-item");
 
         let pager_pre = '<li class="page-item" id="page_pre">' +
-                            '<a class="page-link" onclick="pager.prev();">Previous</a>' +
+                            '<a class="page-link" onclick="pager.prev();">Prev</a>' +
                         '</li>';
         paging_element.append(pager_pre);
 
