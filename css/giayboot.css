@@ -58,7 +58,7 @@
 .menubar {
     position: absolute;
     color:#fff;
-    left: 312px;
+    left: 30%;
     top: -14px;
 }
 .menubar .navbar-dark .navbar-nav .nav-link:hover {
