@@ -1,0 +1,282 @@
+*{margin: 0px}
+
+.header {
+    padding-top: 2px;
+}
+
+.reponsivemenu .list {
+    left: 80px;
+    top: 3px;
+}
+
+nav.navbar.navbar-expand-sm.navbar-color.navbar-dark {
+    left: -28px;
+    top: -20px;
+}
+.btnup {
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    transition: 0.5s;
+    color: white;
+    background: black;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+}
+.btnshow {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menubar .ip {
+    position: absolute;
+    float: right;
+    font-size: 17px;
+    transition: 0.5s;
+    right: 300px;
+    top: -52px;
+}
+
+
+.rightheader .text-right {
+    position: absolute;
+    top: -1px;
+    right: 50px;
+}
+
+.content {
+    padding: 35px;
+}
+
+a.btn.btn-light {
+    background: white;
+    border: 1px solid;
+    height: 30px;
+    line-height: 12px;
+}
+
+a.btn.btn-light:hover {
+    background: black;
+    color: white;
+}
+
+p.card-text {
+    color: red;
+}
+
+h4.card-title {
+    color: #3b3535;
+}
+
+.card {
+    border: none;
+    cursor: pointer;
+}
+
+.title {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.motphantu {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    top: 5px;
+ }
+li.list-group-item {
+    width: 160px;
+    height: 35px;
+    line-height: 10px;
+    background: #ffffff;
+    cursor: pointer;
+}
+.list {
+    position: absolute;
+    padding-top: 13px;
+    transition: 0.5s;
+    transform: translateY(-10%);
+    color: black;
+    left: -30px;
+    visibility: hidden;
+    opacity: 0;
+}
+.menubar .list:after
+{
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 85px;
+    width: 0px;
+    height: 0px;
+    border: 6px #ffd70000 solid;
+    border-bottom-color: white
+}
+.showlist {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+}
+i.fab.fa-youtube {
+    padding-right: 3px;
+}
+
+i.fab.fa-twitter {
+    padding-right: 3px;
+}
+
+i.fab.fa-facebook-f {
+    padding-right: 12px;
+}
+
+.footer i {
+    color: #ffffffc9;
+}
+
+.footer button.btnsutmit.btn.btn-light {
+    background: black;
+    border: none;
+    color: white;
+    font-size: 8.1px;
+    margin-left: -36px;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.text-input {
+    background: black;
+    border: none;
+    color: white;
+    font-size: 16.1px;
+}
+
+h4 {
+    font-size: 14px;
+    color: gray;
+}
+
+.footer a {
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+footer.footer {
+    background: #1b1b1b;
+    padding-top: 66px;
+    padding-bottom: 40px;
+}
+
+.bg img {
+    width: 700px;
+}
+
+
+.bg {
+    background: #8080802e;
+    position: relative;
+    margin-top: 12px;
+}
+
+.menu {
+    padding-bottom: 11px;
+    transition: 0.5s;
+}
+.menuscroll {
+    background: #1b1b1bc9;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.menu:hover {
+    background: #1b1b1b;
+}
+
+.present button.btn.btn-light {
+    background: #000000cf;
+    color: white;
+    border: none;
+    width: 116px;
+
+}
+
+.present button.btn.btn-light:hover {
+    background: #808080c2;
+}
+
+.mainLogo {
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.present {
+    padding-top: 100px;
+    padding-bottom: 160px;
+}
+
+.menubar a.nav-link {
+    color: #f4f2f2;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.menubar .navbar-dark .navbar-nav .nav-link:hover {
+    color: #34a67a;
+}
+
+
+.menubar {
+    position: relative;
+    margin-top: -18px;
+    color:#fff;
+    left: 190px;
+    height: 28px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #f8f9fa;
+}
+
+.navbar-toggler {
+    background-color: #5e3d3d42;
+}
+
+.logo {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.menubar .login {
+    position: absolute;
+    float: right;
+    transition: 0.5s;
+    right: 150px;
+    top: -52px;
+}
+
+.rightheader.text-right {
+    padding-right: 44px;
+}
+
+.leftheader.text-left {
+    padding-left: 15px;
+}
+
+.top {
+    font-size: 11px;
+    padding: 17px;
+}
+.bgtop {
+    background: url("../img/bgpresent.jpg");
+    background-size: cover;
+    color: white;
+    font-family: serif;
+    padding-bottom: 85px;
+}
