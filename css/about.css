@@ -1,0 +1,38 @@
+*{margin: 0; padding: 0;}
+
+#content .card-body {
+    background: #5b5b5e;
+}
+
+#content h5.card-title {
+    color: black;
+}
+
+#content p.card-text {
+    color: black;
+    font-size: 18px;
+}
+
+#content .card {
+    width: 58%;
+    margin-left: 86px;
+    margin-bottom: 15px;
+}
+
+#content p {
+    font-size: 14px;
+}
+
+#content h2 {
+    font-size: 25px;
+}
+
+#content h3 {
+    font-size: 40px;
+    padding: 20px 0px;
+}
+
+div#content {
+    background: #232930;
+    color: white;
+}

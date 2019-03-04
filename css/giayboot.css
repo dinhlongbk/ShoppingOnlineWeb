@@ -98,18 +98,19 @@
 }
 .menubar .login {
     position: absolute;
-    float: right;
+    float: left;
     transition: 0.5s;
-    right: 150px;
-    top: -52px;
+    top: 13px;
+    left: 139%;
+    width: 110px;
 }
 .menubar .ip {
+    top: 13px;
     position: absolute;
-    float: right;
     font-size: 17px;
     transition: 0.5s;
-    right: 300px;
-    top: -52px;
+    left: 120%;
+    width: 90px;
 }
 
 .motphantu {
