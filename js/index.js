@@ -50,7 +50,6 @@ var x = $(window).width();
         }
         //end click menu
         document.getElementById('mymenubar').className = "reponsivemenu";
-        document.getElementById('mysearch').className = "reponsivesearch";
     }
     else
     {
