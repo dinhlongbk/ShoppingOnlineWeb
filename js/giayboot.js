@@ -18,6 +18,7 @@ let products = {
         {maSanPham: "1215", tenSanPham: "Giày Boot Nữ 1215",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4546.png"},
         {maSanPham: "1216", tenSanPham: "Giày Boot Nữ 1216",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4545.png"},
         {maSanPham: "1217", tenSanPham: "Giày Boot Nữ 1217",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4544.png"},
+        {maSanPham: "1217", tenSanPham: "Giày Boot Nữ 1217",giaTien: 245000, mauSac: "đen", gioiTinh: "nữ", hinhAnh: "../img/bootnu/bootwomen4544.png"},
     ],
     "sport": [],
     "sandal": []
