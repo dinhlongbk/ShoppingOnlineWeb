@@ -111,16 +111,6 @@
 
                     <!-- DANH SÁCH SẢN PHẨM -->
                     <div class="row review" id="list-product">
-                        <div v-for="product of products"
-                            class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-                            <div class="card">
-                                <img class="card-img-top" v-bind:src="product.hinhAnh" alt="">
-                                <div class="card-body">
-                                    <p>{{product.tenSanPham}}</p>
-                                    <p class="card-text">{{product.giaTien}}<sup>đ</sup></p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -355,6 +345,7 @@
     <script type="text/javascript" src="../vendor/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="../vendor/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../vendor/vue.min.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/sport.js"></script>
 </body>

@@ -1,0 +1,114 @@
+.container-fluid{
+    padding: 0;
+}
+
+.card{
+    border: 0;
+    border-radius: 0;
+}
+
+.card-header:first-child{
+    border-radius: 0;
+}
+
+#left{
+    width: 22vw;
+    height: 100vh;
+    background-color: blue;
+}
+
+#avatar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid blue;
+}
+
+#content{
+    width: 100vw;
+    height: 100vh;
+}
+
+#logout{
+    color: red;
+    margin-top: -120px;
+}
+
+#info{
+    padding-top: 50px;
+}
+
+#menu{
+    padding: 0;
+}
+
+#menu div a{
+    background-color: #6c757d;
+    color: #ffffff;
+}
+
+#menu div a.active{
+    background-color: #007bff;
+}
+
+#menu-item{
+    height: 90vh;
+}
+
+#btn-action{
+    padding: 0 10px 10px 10px;
+    float: right;
+}
+
+#view-hinhAnh{
+    width: 450px;
+    height: 350px;
+}
+
+#paging{
+    margin-top: 30px;
+}
+
+.icon-item{
+    font-size: 20px;
+    width: 20px;
+}
+
+.title-item{
+    display: inline-block;
+    margin: 0;
+    padding-left: 10px;
+}
+
+#list-product{
+    height: 90%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* width */
+#list-product::-webkit-scrollbar {
+    width: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Track */
+#list-product::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+#list-product::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+#list-product::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#search-input{
+    width: 350px;
+}

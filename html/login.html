@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../vendor/bootstrap-4.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font/fontawesome-free-5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../vendor/util.css">
+    <!-- Nếu có mạng khỏi tải source -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+
+    <title>Online Shopping - Buffalo Coder</title>
+</head>
+
+<body>
+    <div class="bgtop">
+        <!-- NAVIGATION BAR -->
+        <header class="menu">
+            <div class="header">
+                <div class="container-fluid top">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="leftheader text-left">
+                                <i class="fas fa-map-marker-alt"></i> Việt Nam
+                                <i class="fas fa-phone"></i> +84 1900 1000
+                            </div>
+                        </div>
+                        <!-- end col -->
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <h3 class="logo text-center">
+                                Buffalo Coder
+                            </h3>
+                            <!-- end logo -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end cotainer-fluid -->
+            </div>
+            <!-- end header -->
+
+            <div class="menubar" id="mymenubar">
+                <div class="container">
+                    <nav class="navbar navbar-expand-sm navbar-color navbar-dark">
+                        <button class="btnmau navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-center">
+                                <li class="nav-item motphantu declick" data-hienlen="all">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="tintuc">
+                                    <a class="nav-link" href="#">Khuyến mãi</a>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="men">
+                                    <a class="nav-link" href="Allmaleproducts.html">Giày Nam</a>
+                                    <div class="list" id="men">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                            <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
+                                            <li class="list-group-item"><a href="">Dép</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="women">
+                                    <a class="nav-link" href="Allfemaleproducts.html">Giày nữ</a>
+                                    <div class="list" id="women">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a href="">Giày Cao gót</a></li>
+                                            <li class="list-group-item"><a href="">Dép</a></li>
+                                            <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                            <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="chidren">
+                                    <a class="nav-link" href="Allchidrenproducts.html">Trẻ em</a>
+                                    <div class="list" id="chidren">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><a href="">Giày búp bê</a></li>
+                                            <li class="list-group-item"><a href="">Dép</a></li>
+                                            <li class="list-group-item"><a href="">Sandal</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item motphantu declick" data-hienlen="about">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                                <li class="login nav-item">
+                                    <a class="nav-link" href="../../Login/html/login1.html">Đăng nhập</a>
+                                </li>
+                                <li class="ip nav-item">
+                                    <a class="nav-link" href="About.html">About</a>
+                                </li>
+                                <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- end nav -->
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end menubar -->
+        </header>
+
+        <div class="container text-center present">
+            <h2 class="mainLogo">Coder 2019</h2>
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end bgtop -->
+
+    <div id="content">
+        <!--login-->
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+                    <form class="login100-form validate-form flex-sb flex-w">
+                        <span class="login100-form-title p-b-32">
+                            Đăng nhập
+                        </span>
+
+                        <span class="txt1 p-b-11">
+                            Tên tài khoản
+                        </span>
+                        <div class="wrap-input100 validate-input m-b-36" data-validate="Username is required">
+                            <input class="input100" type="text" name="username" id="username">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <span class="txt1 p-b-11">
+                            Mật khẩu
+                        </span>
+                        <div class="wrap-input100 validate-input m-b-12" data-validate="Password is required">
+                            <span class="btn-show-pass">
+                                <i class="fa fa-eye"></i>
+                            </span>
+                            <input class="input100" type="password" name="pass" id="password">
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="flex-sb-m w-full p-b-48">
+                            <div class="contact100-form-checkbox">
+                                <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                                <label class="label-checkbox100" for="ckb1">
+                                    Ghi nhớ đăng nhập
+                                </label>
+                            </div>
+
+                            <div>
+                                <a href="#" class="txt3">
+                                    Quên mật khẩu ?
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn" type="button" id="login-btn">
+                                Đăng nhập
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
+                    <form class="login100-form validate-form flex-sb flex-w">
+                        <span class="login100-form-title p-b-32">
+                            Bạn chưa có tài khoản?
+                        </span>
+
+                        <span class="txt1 p-b-11">
+                            Having a Gucci account will give you access to
+                        </span>
+
+                        <div class="wrap-input100 validate-input m-b-12">
+
+                        </div>
+
+                        <span class="txt1 p-b-11">
+                            * Saved items in your wishlist.
+                        </span>
+
+                        <div class="wrap-input100 validate-input m-b-12">
+
+
+
+                        </div>
+
+                        <div class="wrap-input100 validate-input m-b-12">
+
+                        </div>
+
+                        <span class="txt1 p-b-11">
+                            * Personalized recommendations
+                        </span>
+
+                        <div class="wrap-input100 validate-input m-b-12">
+
+                        </div>
+
+                        <div class="wrap-input100 validate-input m-b-12">
+
+                        </div>
+
+                        <span class="txt1 p-b-11">
+                            * Order delivery updates and return management..
+                        </span>
+
+
+                        <div class="wrap-input100 validate-input m-b-65">
+
+                        </div>
+
+                        <div class="container-login100-form-btn">
+
+                            <div id="btn-action">
+                                <!--gốc-->
+                                <button class="login100-form-btn btn btn-primary" type="button" id="register-btn"
+                                    data-toggle="modal" data-target="#modal-register">
+                                    Đăng ký
+                                </button>
+                                <!--gốc-->
+
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <form method="POST" id="form-register" autocomplete="off">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title text-center">Đăng kí</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group row">
+                                            <label for="fullname" class="col-4 col-form-label">Họ và tên</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="fullname" name="fullname"
+                                                    placeholder="Nhập họ và tên" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="email" class="col-4 col-form-label">Email</label>
+                                            <div class="col-8">
+                                                <input type="email" class="form-control" id="email" name="email"
+                                                    placeholder="Nhập email" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="password" class="col-4 col-form-label">Mật khẩu</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="password" name="password"
+                                                    placeholder="Nhập mật khẩu" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="repassword" class="col-4 col-form-label">Nhập lại mật khẩu</label>
+                                            <div class="col-8">
+                                                <input type="password" class="form-control" id="repassword" name="repassword"
+                                                    placeholder="Nhập lại mật khẩu" required>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="sex" class="col-4 col-form-label">Giới tính</label>
+                                            <div class="col-8">
+                                                <select class="custom-select" id="sex" name="sex">
+                                                    <option value="Nam">Nam</option>
+                                                    <option value="Nữ">Nữ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label for="city" class="col-4 col-form-label">Thành Phố</label>
+                                            <div class="col-8">
+                                                <select class="custom-select" id="city" name="city" required>
+                                                    <option value="CocaCola">TP.HCM</option>
+                                                    <option value="CocaCola">HÀ NỘI</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="birthday" class="col-4 col-form-label">Ngày sinh</label>
+                                            <div class="col-8">
+                                                <input type="text" class="form-control" id="birthday" name="birthday"
+                                                    placeholder="Ngày sinh" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="login100-form-btn " id="submit">ĐĂNG KÍ</button>
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- end login -->
+    </div>
+
+    <!-- begin footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Dịch vụ</h4>
+                    <a href="">Gói quà miễn phí</a> <br>
+                    <a href="">Free Ship toàn quốc</a> <br>
+                    <a href="">Free Ship toàn quốc</a> <br>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Chúng tôi giúp gì được cho bạn?</h4>
+                    <a href="">FAQ</a> <br>
+                    <a href="">Contact Us</a> <br>
+                    <a href="">Dịch vụ thanh toán</a> <br>
+                    <a href="">Cách mua sắm trên Buffalo Coder</a> <br>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Về Công Ty</h4>
+                    <a href="">About</a> <br>
+                    <a href="">Tuyển dụng</a> <b></b>
+                    <a href="">Chính sách và pháp lý</a> <br>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Tìm thấy chúng tôi ở đâu?</h4>
+                    <i class="fab fa-facebook-f"></i><a href="">Facebook</a> <br>
+                    <i class="fab fa-twitter"></i><a href="">Twitter</a> <br>
+                    <i class="fab fa-youtube"></i><a href="">Youtube</a> <br>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <h4>Đăng ký nhận cập nhật</h4>
+                    <a href="">Bằng cách đăng ký này bạn đã chấp nhận các điều khoản của Buffalo Coder</a> <br>
+                    <input class="text-input" placeholder="Email Address" type="text">
+                    <span><button class="btnsutmit btn btn-light">></button></span>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- end footer -->
+
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="../vendor/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../vendor/jquery.validate.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+</body>
+
+</html>

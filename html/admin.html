@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../vendor/font/fontawesome-free-5.7.2/css/all.css" />
+  <link rel="stylesheet" href="../vendor/bootstrap-4.2.1-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+  <title>Quản lý bán hàng</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="card text-white bg-secondary float-left" id="left">
+      <div class="card-header" id="info">
+        <div class="text-center" id="avatar">
+          <img src="../img/admin.png" />
+        </div>
+        <button type="button" class="close" id="logout">
+          <span aria-hidden="true">
+            <i class="fas fa-sign-out-alt"></i>
+          </span>
+        </button>
+        <p class="text-center">Admin</p>
+        <p class="text-center">Xin chào Admin</p>
+      </div>
+      <div class="card-body" id="menu">
+        <div class="list-group bg-secondary">
+          <a href="#" class="list-group-item list-group-item-action active">
+            <i class="fab fa-product-hunt icon-item align-middle"></i>
+            <p class="align-middle text-center title-item">Quản lý sản phẩm</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div class="card bg-light">
+        <div class="card-header bg-secondary text-white">
+          <h4>QUẢN LÝ SẢN PHẨM</h4>
+        </div>
+
+        <div class="card-body" id="menu-item">
+          <div id="nav">
+            <!-- SEARCH -->
+            <div id="search" class="float-left">
+              <form class="form-inline">
+                <label class="sr-only" for="search-input">Nhập từ khoá tìm kiếm</label>
+                <div class="input-group mb-2 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" id="search-input" name="search-input" placeholder="Nhập từ khoá tìm kiếm"
+                    data-list="#products" data-toggle="hideseek" autocomplete="off">
+                </div>
+              </form>
+            </div>
+
+            <!-- ACTION -->
+            <div id="btn-action">
+              <!-- THÊM -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-AddProduct">
+                <i class="fas fa-plus-circle"></i>
+                <span class="title-btn-action">Thêm</span>
+              </button>
+              <div class="modal fade" id="modal-AddProduct" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <form method="POST" id="form-addProduct" autocomplete="off">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Thêm sản phẩm</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group row">
+                          <label for="maSanPham" class="col-4 col-form-label">Mã sản phẩm</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="maSanPham" name="maSanPham" placeholder="Nhập mã sản phẩm"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="tenSanPham" class="col-4 col-form-label">Tên sản phẩm</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="tenSanPham" name="tenSanPham" placeholder="Nhập tên sản phẩm"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="loai" class="col-4 col-form-label">Loại</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="loai" name="loai" placeholder="Nhập loại sản phẩm"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="kichThuoc" class="col-4 col-form-label">Kích thước <br/> (giữ Ctrl để chọn nhiều kích thước)</label>
+                          <div class="col-8">
+                            <select multiple class="form-control" id="kichThuoc" name="kichThuoc">
+                              <option value="35">35</option>
+                              <option value="36">36</option>
+                              <option value="37">37</option>
+                              <option value="38">38</option>
+                              <option value="39">39</option>
+                              <option value="40">40</option>
+                              <option value="41">41</option>
+                              <option value="42">42</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="gioiTinh" class="col-4 col-form-label">Giới tính</label>
+                          <div class="col-8">
+                            <select class="custom-select" id="gioiTinh" name="gioiTinh">
+                              <option value="Nam">Nam</option>
+                              <option value="Nữ">Nữ</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="giaTien" class="col-4 col-form-label">Giá tiền</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="giaTien" name="giaTien" placeholder="Nhập giá tiền"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="soLuong" class="col-4 col-form-label">Số lượng</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="soLuong" name="soLuong" placeholder="Nhập số lượng sản phẩm"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="nhaSanXuat" class="col-4 col-form-label">Nhà sản xuất</label>
+                          <div class="col-8">
+                            <select class="custom-select" id="nhaSanXuat" name="nhaSanXuat" required>
+                              <option value="CocaCola">CocaCola</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="ngayNhap" class="col-4 col-form-label">Ngày nhập</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="ngayNhap" name="ngayNhap" placeholder="Nhập ngày nhập kho"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-4 col-form-label">Chọn hình</label>
+                          <div class="col-8">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="hinhAnh" name="hinhAnh" aria-describedby="inputGroupFileAddon01">
+                              <label class="custom-file-label" for="hinhAnh">Choose file</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="reset" class="btn btn-danger">Làm mới</button>
+                        <button type="submit" class="btn btn-success">Thêm</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- XOÁ -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-DeleteProduct">
+                <i class="fas fa-trash"></i>
+                <span class="title-btn-action">Xoá</span>
+              </button>
+              <div class="modal" id="modal-DeleteProduct" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Thông báo</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Bạn có muốn xoá sản phẩm này không ?</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Huỷ bỏ</button>
+                      <button type="button" class="btn btn-danger" id="btn-deleteProduct">Đồng ý</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- SỬA -->
+              <button type="button" class="btn btn-primary" id="btn-edit" data-toggle="modal">
+                <i class="fas fa-edit"></i>
+                <span class="title-btn-action">Sửa</span>
+              </button>
+              <div class="modal fade" id="modal-editProduct" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <form method="POST" id="form-editProduct">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Thay đổi thông tin sản phẩm</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-group row">
+                          <label for="edit-maSanPham" class="col-4 col-form-label">Mã sản phẩm</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="edit-maSanPham" placeholder="Nhập mã sản phẩm"
+                              readonly>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-tenSanPham" class="col-4 col-form-label">Tên sản phẩm</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="edit-tenSanPham" name="tenSanPham" placeholder="Nhập tên sản phẩm"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-loai" class="col-4 col-form-label">Loại</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="edit-loai" name="loai" placeholder="Nhập loại sản phẩm"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-kichThuoc" class="col-4 col-form-label">Kích thước <br/> (Giữ Ctrl để chọn nhiều kích thước)</label>
+                          <div class="col-8">
+                            <select multiple class="custom-select" id="edit-kichThuoc" name="kichThuoc">
+                              <option value="35">35</option>
+                              <option value="36">36</option>
+                              <option value="37">37</option>
+                              <option value="38">38</option>
+                              <option value="39">39</option>
+                              <option value="40">40</option>
+                              <option value="41">41</option>
+                              <option value="42">42</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-gioiTinh" class="col-4 col-form-label">Giới tính</label>
+                          <div class="col-8">
+                            <select class="custom-select" id="edit-gioiTinh" name="gioiTinh">
+                              <option value="Nam">Nam</option>
+                              <option value="Nữ">Nữ</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-giaTien" class="col-4 col-form-label">Giá tiền</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="edit-giaTien" name="giaTien" placeholder="Nhập giá tiền"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-soLuong" class="col-4 col-form-label">Số lượng</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="edit-soLuong" name="soLuong" placeholder="Nhập số lượng sản phẩm"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-nhaSanXuat" class="col-4 col-form-label">Nhà sản xuất</label>
+                          <div class="col-8">
+                            <select class="custom-select" id="edit-nhaSanXuat" name="nhaSanXuat" required>
+                              <option value="CocaCola">CocaCola</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="edit-ngayNhap" class="col-4 col-form-label">Ngày nhập</label>
+                          <div class="col-8">
+                            <input type="text" class="form-control" id="edit-ngayNhap" name="ngayNhap" placeholder="Nhập ngày nhập kho"
+                              required>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label class="col-4 col-form-label">Chọn hình</label>
+                          <div class="col-8">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="edit-hinhAnh" aria-describedby="inputGroupFileAddon01">
+                              <label class="custom-file-label" for="edit-hinhAnh">Choose file</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- XEM CHI TIẾT -->
+              <button type="button" class="btn btn-primary" id="btn-view" data-toggle="modal">
+                <i class="fas fa-eye"></i>
+                <span class="title-btn-action">Xem chi tiết</span>
+              </button>
+              <div class="modal fade" id="modal-viewDetail" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Thông tin sản phẩm</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div id="product">
+                        <div class="text-center">
+                          <img src="" class="rounded mb-4" id="view-hinhAnh" alt="product image">
+                        </div>
+                        <div class="mb-4">
+                          <h3 class="text-center" id="view-tenSanPham"></h3>
+                          <h4 class="text-center" id="view-loai"></h4>
+                        </div>
+                        <div class="ml-4 mr-4 d-block">
+                          <p id="view-maSanPham"></p>
+                          <p id="view-gioiTinh"></p>
+                          <p id="view-kichThuoc"></p>
+                          <p id="view-mauSac"></p>
+                          <p id="view-giaTien"></p>
+                          <p id="view-soLuong"></p>
+                          <p id="view-nhaSanXuat"></p>
+                          <p id="view-ngayNhap"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LIST PRODUCT -->
+          <div id="list-product">
+            <table class="table table-hover" id="table-product">
+              <thead>
+                <tr class="bg-primary text-white">
+                  <th scope="col">Mã</th>
+                  <th scope="col">Tên sản phẩm</th>
+                  <th scope="col">Loại</th>
+                  <th scope="col">Kích thước</th>
+                  <th scope="col">Giới tính</th>
+                  <th scope="col">Giá tiền</th>
+                  <th scope="col">Số lượng</th>
+                  <th scope="col">Ngày nhập</th>
+                </tr>
+              </thead>
+              <tbody id="products"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../vendor/jquery-3.3.1.js"></script>
+  <script src="../vendor/jquery.hideseek.js"></script>
+  <script src="../vendor/jquery.validate.js"></script>
+  <script src="../vendor/popper.min.js"></script>
+  <script src="../vendor/bootstrap-4.2.1-dist/js/bootstrap.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+
+</html>
