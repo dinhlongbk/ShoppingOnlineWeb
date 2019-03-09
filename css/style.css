@@ -10,7 +10,7 @@
 }
 
 nav.navbar.navbar-expand-sm.navbar-color.navbar-dark {
-    left: -28px;
+    left: 150px;
     top: -20px;
 }
 .btnup {
@@ -260,7 +260,10 @@ footer.footer {
     right: 150px;
     top: -52px;
 }
-
+.motphantu a {
+    text-decoration: none;
+    color: black;
+}
 .rightheader.text-right {
     padding-right: 44px;
 }

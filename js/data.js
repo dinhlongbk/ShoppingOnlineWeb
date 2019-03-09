@@ -184,33 +184,65 @@ function showProductsByType(parent, type){
 
 //========== DATA ==========//
 let listProducts = new ListProducts();
-listProducts.add(new Product("1111", "bootwomen", "BOOT", [35, 36, 37, 38], "Nữ", "245000", "Đen", 100, "../img/bootwomen.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1112", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1113", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1114", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1115", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1116", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1117", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1118", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1119", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1120", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1121", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1122", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1123", "bootwomen4560", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1124", "bootwomen4560", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1125", "bootwomen4560", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1126", "bootwomen4560", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1127", "bootwomen4560", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1128", "bootwomen4560", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1129", "bootwomen4560", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1130", "bootwomen4560", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1131", "bootwomen4560", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1132", "bootwomen4560", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1133", "bootwomen4560", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1134", "bootwomen4560", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1135", "bootwomen4560", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
-listProducts.add(new Product("1136", "bootwomen4560", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1111", "Boot Nữ 1142", "BOOT", [35, 36, 37, 38], "Nữ", "245000", "Đen", 100, "../img/bootwomen.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1112", "Boot Nữ 1143", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1113", "Boot Nữ 1144", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1114", "Boot Nữ 1145", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1715", "Boot Nữ 1146", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1316", "Boot Nữ 1147", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1113", "Boot Nữ 1148", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1114", "Boot Nữ 1149", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1215", "Boot Nữ 1150", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1116", "Boot Nữ 1152", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1113", "Boot Nữ 1153", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1114", "Boot Nữ 1154", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1115", "Boot Nữ 1155", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1344", "Boot Nữ 1156", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1127", "Boot Nữ 1157", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1128", "Boot Nữ 1158", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1319", "Boot Nữ 1159", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1420", "Boot Nữ 1160", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1521", "Boot Nữ 1161", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1622", "Boot Nữ 1162", "BOOT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+// ----------------------------------------------
+listProducts.add(new Product("1723", "Sport Nữ 1000", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/1.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1824", "Sport Nữ 1001", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1125", "Sport Nữ 1002", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1126", "Sport Nữ 1003", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1127", "Sport Nữ 1004", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1128", "Sport Nữ 1005", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/1.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1129", "Sport Nữ 1006", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1130", "Sport Nữ 1007", "SPORT", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
+//  ------------------------------------------------------------
+listProducts.add(new Product("1131", "Sandal Nữ 1231", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/1.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1132", "Sandal Nữ 1221", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1133", "Sandal Nữ 1211", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1134", "Sandal Nữ 1241", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/1.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1135", "Sandal Nữ 1251", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1136", "Sandal Nữ 1261", "SANDAL", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/3.png", "ShopHouse", "01/01/2019"));
+// --------------------------------------------------------------
+listProducts.add(new Product("1101", "Sandal Nữ 1231", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/1.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1102", "Sandal Nữ 1221", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1103", "Sandal Nữ 1211", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sandal/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1224", "Sport Nữ 1001", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1025", "Sport Nữ 1002", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1026", "Sport Nữ 1003", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1020", "Boot Nữ 1160", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1021", "Boot Nữ 1161", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("1029", "Boot Nữ 1162", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0001", "Sport Nữ 1004", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0002", "Sport Nữ 1005", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/1.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0004", "Sport Nữ 1006", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0054", "Sport Nữ 1007", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
 
+listProducts.add(new Product("0123", "Sport Nữ 1003", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0241", "Boot Nữ 1160", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0125", "Boot Nữ 1161", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0221", "Boot Nữ 1162", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/bootwomen4560.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0512", "Sport Nữ 1004", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0321", "Sport Nữ 1005", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/1.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("0122", "Sport Nữ 1006", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/3.png", "ShopHouse", "01/01/2019"));
+listProducts.add(new Product("11231", "Sport Nữ 1007", "ALLFEMALE", [35, 36, 37, 38], "Nữ", "250000", "Đen", 100, "../img/sport/2.png", "ShopHouse", "01/01/2019"));
 
 /**
  * GHI CHÚ

@@ -17,7 +17,10 @@
     left: -19px;
     position: relative;
 }
-
+.motphantu a {
+    text-decoration: none;
+    color: black;
+}
 .review p.card-text {
     color: red;
 }
@@ -125,6 +128,7 @@ li.list-group-item {
     line-height: 10px;
     background: #ffffff;
     cursor: pointer;
+    border: none;
 }
 .footer i {
     color: #ffffffc9;

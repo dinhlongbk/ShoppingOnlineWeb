@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../vendor/bootstrap-4.2.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../vendor/font/fontawesome-free-5.7.2/css/all.css">
     <link rel="stylesheet" href="../css/giayboot.css">
-    <link rel="shortcut icon" type="image/jpeg" href="../img/buffalo.jpeg"/>
+    <link rel="shortcut icon" type="image/jpeg" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxssPzv5EtaGbjXmjITLJHm-oKw8nz2VuEWbKoXXjrYbHggL_8dw"/>
 
     <!-- Nếu có mạng khỏi tải source -->
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -34,37 +34,26 @@
                                 <a class="nav-link" href="index.html">Trang chủ</a>
                             </li>
                             <li class="nav-item motphantu declick" data-hienlen="tintuc">
-                                <a class="nav-link" href="#">Khuyến mãi</a>
+                                <a class="nav-link" href="Khuyenmai.html">Khuyến mãi</a>
                             </li>
                             <li class="nav-item motphantu declick" data-hienlen="men">
-                                <a class="nav-link" href="Allmaleproducts.html">Giày Nam</a>
+                                <a class="nav-link" href="Allmale.html">Giày Nam</a>
                                 <div class="list" id="men">
                                     <ul class="list-group">
-                                        <li class="list-group-item">Sandal</li>
-                                        <li class="list-group-item">Boot</li>
-                                        <li class="list-group-item">Giày thể thao</li>
-                                        <li class="list-group-item">Dép</li>
+                                        <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                        <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
+                                        <li class="list-group-item"><a href="Dep.html">Dép</a></li>
                                     </ul>
                                 </div>
                             </li>
                             <li class="nav-item motphantu declick" data-hienlen="women">
-                                <a class="nav-link" href="Allfemaleproducts.html">Giày nữ</a>
+                                <a class="nav-link" href="Allfemale.html">Giày nữ</a>
                                 <div class="list" id="women">
                                     <ul class="list-group">
-                                        <li class="list-group-item">Giày Cao gót</li>
-                                        <li class="list-group-item">Dép</li>
-                                        <li class="list-group-item">Sandal</li>
-                                        <li class="list-group-item">Giày thể thao</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item motphantu declick" data-hienlen="chidren">
-                                <a class="nav-link" href="Allchidrenproducts.html">Trẻ em</a>
-                                <div class="list" id="chidren">
-                                    <ul class="list-group">
-                                        <li class="list-group-item">Giày búp bê</li>
-                                        <li class="list-group-item">Dép</li>
-                                        <li class="list-group-item">Sandal</li>
+                                        <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
+                                        <li class="list-group-item"><a href="Dep.html">Dép</a></li>
+                                        <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                        <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -72,10 +61,10 @@
                                 <a class="nav-link" href="About.html">About</a>
                             </li>
                             <li class="login nav-item">
-                                <a class="nav-link" href="../../Login/html/login1.html">Đăng nhập</a>
+                                <a class="nav-link" href="login.html">Đăng nhập</a>
                             </li>
                             <li class="ip nav-item">
-                                <a class="nav-link" href="#">Giỏ hàng</a>
+                                <a class="nav-link" href="Giohang.html">Giỏ hàng</a>
                             </li>
                         </ul>
                     </div>
@@ -94,7 +83,7 @@
             <!-- THANH TÌM KIẾM -->
             <div id="search">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Nhập sản phẩm cần tìm">
+                    <input class="form-control mr-sm-2" name="search" placeholder="Start typing here" type="text" data-toggle="hideseek" data-list="#list-product" data-nodata="No results found" autocomplete="off">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
                 </form>
             </div>
@@ -345,8 +334,9 @@
     <script type="text/javascript" src="../vendor/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="../vendor/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../vendor/vue.min.js"></script>
+    <script src="../vendor/jquery.hideseek.js"></script>
     <script type="text/javascript" src="../js/data.js"></script>
-    <script src="../js/index.js"></script>
-    <script src="../js/sandal.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/sandal.js"></script>
 </body>
 </html>
