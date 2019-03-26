@@ -3,15 +3,22 @@
 .header {
     padding-top: 2px;
 }
+nav.navbar.navbar-expand-sm.navbar-color.navbar-dark {
+    left: 150px;
+    top: -20px;
+}
 
 .reponsivemenu .list {
     left: 80px;
     top: 3px;
 }
 
-nav.navbar.navbar-expand-sm.navbar-color.navbar-dark {
-    left: 150px;
+.reponsivemenu nav.navbar.navbar-expand-sm.navbar-color.navbar-dark {
+    left: 10px;
     top: -20px;
+}
+.reponsivemenu .container{
+    margin-bottom: -30px;
 }
 .btnup {
     position: fixed;
