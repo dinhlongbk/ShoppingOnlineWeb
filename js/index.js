@@ -33,7 +33,7 @@ var scrollmenu = () => {
         });
 }
 // reponsive menubar
-var hieuungmenu = () => {
+let hieuungmenu = () => {
 var dehover = $('.declick');
 var x = $(window).width();
     if(x<1300)
