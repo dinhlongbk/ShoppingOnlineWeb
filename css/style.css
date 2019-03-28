@@ -1,6 +1,10 @@
 *{margin: 0px}
 
-.header {
+img.d-block.w-100 {
+    height: 419px;
+}
+
+nav {
     padding-top: 2px;
 }
 nav.navbar.navbar-expand-sm.navbar-color.navbar-dark {
@@ -194,6 +198,7 @@ footer.footer {
 .menu {
     padding-bottom: 11px;
     transition: 0.5s;
+    background: black;
 }
 .menuscroll {
     background: #1b1b1bc9;
@@ -238,6 +243,7 @@ footer.footer {
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
+    cursor: pointer;
 }
 
 .menubar .navbar-dark .navbar-nav .nav-link:hover {
@@ -290,8 +296,7 @@ footer.footer {
     padding: 17px;
 }
 .bgtop {
-    background: url("../img/bgpresent.jpg");
-    background-size: cover;
+
     color: white;
     font-family: serif;
     padding-bottom: 85px;

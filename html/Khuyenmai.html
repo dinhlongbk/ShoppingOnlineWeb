@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../vendor/bootstrap-4.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../vendor/font/fontawesome-free-5.7.2/css/all.css">
+    <link rel="stylesheet" href="../css/giayboot.css">
+    <link rel="stylesheet" href="../css/Shopping carts.css">
+    <link rel="shortcut icon" type="image/jpeg" href="../img/buffalo.jpeg"/>
+
+    <!-- Nếu có mạng khỏi tải source -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script> -->
+
+    <title>Giày Boots</title>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header class="menu">
+        <div class="menubar" id="mymenubar">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-color navbar-dark">
+                    <button class="btnmau navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-center">
+                            <li class="nav-item motphantu declick" data-hienlen="all">
+                                <a class="nav-link" href="index.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item motphantu declick" data-hienlen="tintuc">
+                                <a class="nav-link" href="Khuyenmai.html">Khuyến mãi</a>
+                            </li>
+                            <li class="nav-item motphantu declick" data-hienlen="men">
+                                <a class="nav-link" href="#">Giày Nam</a>
+                                <div class="list" id="men">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                        <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
+                                        <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item motphantu declick" data-hienlen="women">
+                                <a class="nav-link" href="#">Giày nữ</a>
+                                <div class="list" id="women">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
+                                        <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                        <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item motphantu declick" data-hienlen="about">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                            <li class="login nav-item">
+                                <a class="nav-link" href="login.html">Đăng nhập</a>
+                            </li>
+                            <li class="ip nav-item">
+                                <a class="nav-link"  data-toggle="modal" data-target="#modal-register">Giỏ hàng</a>
+                            </li>
+
+                            </form>
+                            <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <form method="POST" id="form-register" autocomplete="off">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-center">Shopping Cart</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!-- Product #1 -->
+                                               <div class="spitem">
+                                                 <div class="spimage">
+                                                     <img src="../img/item-1.png" alt="" />
+                                                 </div>
+
+                                                 <div class="spdescription">
+                                                    <span>Common Projects</span>
+                                                    <span>Bball High</span>
+                                                    <span>White</span>
+                                                 </div>
+
+                                                <div class="spquantity">
+                                                    <button class="plus-btn" type="button" name="button">
+                                                        <img src="../img/plus.svg" alt="" />
+                                                    </button>
+                                                        <input type="text" name="name" value="1">
+                                                    <button class="minus-btn" type="button" name="button">
+                                                        <img src="../img/minus.svg" alt="" />
+                                                    </button>
+                                                 </div>
+
+                                                         <div class="total-price">$549</div>
+                                                </div>
+
+
+                                                <div class="spitem">
+                                                 <div class="spimage">
+                                                     <img src="../img/item-2.png" alt="" />
+                                                 </div>
+
+                                                 <div class="spdescription">
+                                                    <span>Common Projects</span>
+                                                    <span>Bball High</span>
+                                                    <span>White</span>
+                                                 </div>
+
+                                                <div class="spquantity">
+                                                    <button class="plus-btn" type="button" name="button">
+                                                        <img src="../img/plus.svg" alt="" />
+                                                    </button>
+                                                        <input type="text" name="name" value="1">
+                                                    <button class="minus-btn" type="button" name="button">
+                                                        <img src="../img/minus.svg" alt="" />
+                                                    </button>
+                                                 </div>
+
+                                                         <div class="total-price">$849</div>
+                                                </div>
+
+
+
+                                                <div class="spitem">
+                                                 <div class="spimage">
+                                                     <img src="../img/item-3.png" alt="" />
+                                                 </div>
+
+                                                 <div class="spdescription">
+                                                    <span>Common Projects</span>
+                                                    <span>Bball High</span>
+                                                    <span>White</span>
+                                                 </div>
+
+                                                <div class="spquantity">
+                                                    <button class="plus-btn" type="button" name="button">
+                                                        <img src="../img/plus.svg" alt="" />
+                                                    </button>
+                                                        <input type="text" name="name" value="1">
+                                                    <button class="minus-btn" type="button" name="button">
+                                                        <img src="../img/minus.svg" alt="" />
+                                                    </button>
+                                                 </div>
+
+                                                         <div class="total-price">$449</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </ul>
+
+                        </ul>
+                    </div>
+                </nav>
+                <!-- end nav -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end menubar -->
+    </header>
+    <button class="btnup btn">^</button>
+    <img src="../img/sale.png" alt="">
+    <!-- CONTENT -->
+    <div id="content">
+        <div class="container">
+
+            <!-- THANH TÌM KIẾM -->
+            <div id="search">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" name="search" placeholder="Start typing here" type="text" data-toggle="hideseek" data-list="#list-product" data-nodata="No results found" autocomplete="off">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tìm kiếm</button>
+                </form>
+            </div>
+            <!-- PAGING -->
+            <div id="paging_top" class="justify-content-center">
+                <ul class="pagination" id="paging-item_top">
+                </ul>
+            </div>
+            <h3>Giày Boots</h3>
+            <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                    <input type="hidden" name="" id="current_page" value="0">
+                    <input type="hidden" name="" id="show_per_page" value="12">
+
+                    <!-- DANH SÁCH SẢN PHẨM -->
+                    <div class="row review" id="list-product">
+                    </div>
+                </div>
+
+                <div class="khungchinh col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    <div class="khungtitle">
+                        <b>Lọc Sản phẩm</b>
+                    </div>
+                    <div class="khungloc">
+                        <p>Loại giày</p>
+                        <div class="locsanpham">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Boot Nữ
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Boot Nam
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Giày thể thao nam
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Giày thể thao nữ
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Giày Sandal nam
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Giày Sandal nữ
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Giày búp bê
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Dép
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Phụ Kiện
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end lọc sản phẩm -->
+                        <hr>
+                        <div class="khungloc">
+                                <p>Màu Sắc</p>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Vàng
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Đen
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Nâu
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Trắng
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Đỏ
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Xanh
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Tím
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Lục
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end màu sắc -->
+                        <hr>
+                        <div class="khungloc">
+                            <p>Giá</p>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Dưới 100.000<sup>đ</sup>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">100.000<sup>đ</sup>-300.000<sup>đ</sup>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">300.000<sup>đ</sup>-500.000<sup>đ</sup>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">500.000<sup>đ</sup>-1.000.000<sup>đ</sup>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue">Trên 1.000.000<sup>đ</sup>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- end mục lục lọc menu -->
+                </div>
+                <!-- end bs3 mục lục -->
+
+                <!-- PAGING -->
+                <div id="paging" class="justify-content-center">
+                    <ul class="pagination" id="paging-item">
+                    </ul>
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Dịch vụ</h4>
+                    <a href="">Gói quà miễn phí</a> <br>
+                    <a href="">Free Ship toàn quốc</a> <br>
+                    <a href="">Free Ship toàn quốc</a> <br>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Chúng tôi giúp gì được cho bạn?</h4>
+                    <a href="">FAQ</a> <br>
+                    <a href="">Contact Us</a> <br>
+                    <a href="">Dịch vụ thanh toán</a> <br>
+                    <a href="">Cách mua sắm trên Buffalo Coder</a> <br>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Về Công Ty</h4>
+                    <a href="">About</a> <br>
+                    <a href="">Tuyển dụng</a> <b></b>
+                    <a href="">Chính sách và pháp lý</a> <br>
+                </div>
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <h4>Tìm thấy chúng tôi ở đâu?</h4>
+                    <i class="fab fa-facebook-f"></i><a href="">Facebook</a> <br>
+                    <i class="fab fa-twitter"></i><a href="">Twitter</a> <br>
+                    <i class="fab fa-youtube"></i><a href="">Youtube</a> <br>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <h4>Đăng ký nhận cập nhật</h4>
+                    <a href="">Bằng cách đăng ký này bạn đã chấp nhận các điều khoản của Buffalo Coder</a> <br>
+                    <input class="text-input" placeholder="Email Address" type="text">
+                    <span><button class="btnsutmit btn btn-light">></button></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="../vendor/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="../vendor/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../vendor/vue.min.js"></script>
+    <script type="text/javascript" src="../js/data.js"></script>
+    <script src="../vendor/jquery.hideseek.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/giayboot.js"></script>
+</body>
+</html>

@@ -1,5 +1,9 @@
 *{margin: 0}
 
+img {
+    width: 100%;
+}
+
 i.fa.fa-shopping-cart {
     font-size: 25px;
     position: relative;

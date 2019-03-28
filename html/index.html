@@ -23,316 +23,353 @@
 <body>
     <div class="bgtop">
         <!-- NAVIGATION BAR -->
-        <header class="menu">
-            <div class="header">
-                <div class="container-fluid top">
-                    <div class="row">
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="leftheader text-left">
-                                <i class="fas fa-map-marker-alt"></i> Việt Nam
-                                <i class="fas fa-phone"></i> +84 1900 1000
+        <nav class="menu">
+                <div class="header">
+                    <div class="container-fluid top">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <div class="leftheader text-left">
+                                    <i class="fas fa-map-marker-alt"></i> Việt Nam
+                                    <i class="fas fa-phone"></i> +84 1900 1000
+                                </div>
                             </div>
+                            <!-- end col -->
+    
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <h3 class="logo text-center">
+                                    Buffalo Coder
+                                </h3>
+                                <!-- end logo -->
+                            </div>
+                            <!-- end col -->
                         </div>
-                        <!-- end col -->
-
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <h3 class="logo text-center">
-                                Buffalo Coder
-                            </h3>
-                            <!-- end logo -->
-                        </div>
-                        <!-- end col -->
+                        <!-- end row -->
                     </div>
-                    <!-- end row -->
+                    <!-- end cotainer-fluid -->
                 </div>
-                <!-- end cotainer-fluid -->
-            </div>
-            <!-- end header -->
-
-            <div class="menubar" id="mymenubar">
-                <div class="container">
-                    <nav class="navbar navbar-expand-sm navbar-color navbar-dark">
-                        <button class="btnmau navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapsibleNavId">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-center">
-                                <li class="nav-item motphantu declick" data-hienlen="all">
-                                    <a class="nav-link" href="index.html">Trang chủ</a>
-                                </li>
-                                <li class="nav-item motphantu declick" data-hienlen="tintuc">
-                                    <a class="nav-link" href="Khuyenmai.html">Khuyến mãi</a>
-                                </li>
-                                <li class="nav-item motphantu declick" data-hienlen="men">
-                                    <a class="nav-link" href="#">Giày Nam</a>
-                                    <div class="list" id="men">
-                                        <ul class="list-group">
-                                            <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
-                                            <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
-                                            <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item motphantu declick" data-hienlen="women">
-                                    <a class="nav-link" href="#">Giày nữ</a>
-                                    <div class="list" id="women">
-                                        <ul class="list-group">
-                                            <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
-                                            <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
-                                            <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-item motphantu declick" data-hienlen="about">
-                                    <a class="nav-link" href="About.html">About</a>
-                                </li>
-                                <li class="login nav-item">
-                                    <a class="nav-link" href="login.html">Đăng nhập</a>
-                                </li>
-                                <li class="ip nav-item">
-                                    <a class="nav-link"data-toggle="modal" data-target="#modal-register">Giỏ Hàng</a>
-                                </li>
-                        </form>
-                            <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                    <form method="POST" id="form-register" autocomplete="off">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title text-center">Shopping Cart</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <!-- Product #1 -->
-                                               <div class="spitem">
-                                                 <div class="spimage">
-                                                     <img src="../img/item-1.png" alt="" />
-                                                 </div>
-
-                                                 <div class="spdescription">
-                                                    <span>Common Projects</span>
-                                                    <span>Bball High</span>
-                                                    <span>White</span>
-                                                 </div>
-
-                                                <div class="spquantity">
-                                                    <button class="plus-btn" type="button" name="button">
-                                                        <img src="../img/plus.svg" alt="" />
-                                                    </button>
-                                                        <input type="text" name="name" value="1">
-                                                    <button class="minus-btn" type="button" name="button">
-                                                        <img src="../img/minus.svg" alt="" />
-                                                    </button>
-                                                 </div>
-
-                                                         <div class="total-price">$549</div>
-                                                </div>
-
-
-                                                <div class="spitem">
-                                                 <div class="spimage">
-                                                     <img src="../img/item-2.png" alt="" />
-                                                 </div>
-
-                                                 <div class="spdescription">
-                                                    <span>Common Projects</span>
-                                                    <span>Bball High</span>
-                                                    <span>White</span>
-                                                 </div>
-
-                                                <div class="spquantity">
-                                                    <button class="plus-btn" type="button" name="button">
-                                                        <img src="../img/plus.svg" alt="" />
-                                                    </button>
-                                                        <input type="text" name="name" value="1">
-                                                    <button class="minus-btn" type="button" name="button">
-                                                        <img src="../img/minus.svg" alt="" />
-                                                    </button>
-                                                 </div>
-
-                                                         <div class="total-price">$849</div>
-                                                </div>
-
-
-
-                                                <div class="spitem">
-                                                 <div class="spimage">
-                                                     <img src="../img/item-3.png" alt="" />
-                                                 </div>
-
-                                                 <div class="spdescription">
-                                                    <span>Common Projects</span>
-                                                    <span>Bball High</span>
-                                                    <span>White</span>
-                                                 </div>
-
-                                                <div class="spquantity">
-                                                    <button class="plus-btn" type="button" name="button">
-                                                        <img src="../img/plus.svg" alt="" />
-                                                    </button>
-                                                        <input type="text" name="name" value="1">
-                                                    <button class="minus-btn" type="button" name="button">
-                                                        <img src="../img/minus.svg" alt="" />
-                                                    </button>
-                                                 </div>
-
-                                                         <div class="total-price">$449</div>
-                                                </div>
-
-                                            </div>
-
+                <!-- end header -->
+    
+                <div class="menubar" id="mymenubar">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-sm navbar-color navbar-dark">
+                            <button class="btnmau navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-center">
+                                    <li class="nav-item motphantu declick" data-hienlen="all">
+                                        <a class="nav-link" href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item motphantu declick" data-hienlen="tintuc">
+                                        <a class="nav-link" href="Khuyenmai.html">Khuyến mãi</a>
+                                    </li>
+                                    <li class="nav-item motphantu declick" data-hienlen="men">
+                                        <a class="nav-link" href="#">Giày Nam</a>
+                                        <div class="list" id="men">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                                <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
+                                                <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
+                                            </ul>
                                         </div>
-                                    </div>
-                                </form>
-                            </ul>
-                        </div>
-                    </nav>
-                    <!-- end nav -->
+                                    </li>
+                                    <li class="nav-item motphantu declick" data-hienlen="women">
+                                        <a class="nav-link" href="#">Giày nữ</a>
+                                        <div class="list" id="women">
+                                            <ul class="list-group">
+                                                <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
+                                                <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
+                                                <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item motphantu declick" data-hienlen="about">
+                                        <a class="nav-link" href="About.html">About</a>
+                                    </li>
+                                    <li class="login nav-item">
+                                        <a class="nav-link" href="login.html">Đăng nhập</a>
+                                    </li>
+                                    <li class="ip nav-item">
+                                        <a class="nav-link"data-toggle="modal" data-target="#modal-register">Giỏ Hàng</a>
+                                    </li>
+                            </form>
+                                <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <form method="POST" id="form-register" autocomplete="off">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title text-center">Shopping Cart</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Product #1 -->
+                                                   <div class="spitem">
+                                                     <div class="spimage">
+                                                         <img src="../img/item-1.png" alt="" />
+                                                     </div>
+    
+                                                     <div class="spdescription">
+                                                        <span>Common Projects</span>
+                                                        <span>Bball High</span>
+                                                        <span>White</span>
+                                                     </div>
+    
+                                                    <div class="spquantity">
+                                                        <button class="plus-btn" type="button" name="button">
+                                                            <img src="../img/plus.svg" alt="" />
+                                                        </button>
+                                                            <input type="text" name="name" value="1">
+                                                        <button class="minus-btn" type="button" name="button">
+                                                            <img src="../img/minus.svg" alt="" />
+                                                        </button>
+                                                     </div>
+    
+                                                             <div class="total-price">$549</div>
+                                                    </div>
+    
+    
+                                                    <div class="spitem">
+                                                     <div class="spimage">
+                                                         <img src="../img/item-2.png" alt="" />
+                                                     </div>
+    
+                                                     <div class="spdescription">
+                                                        <span>Common Projects</span>
+                                                        <span>Bball High</span>
+                                                        <span>White</span>
+                                                     </div>
+    
+                                                    <div class="spquantity">
+                                                        <button class="plus-btn" type="button" name="button">
+                                                            <img src="../img/plus.svg" alt="" />
+                                                        </button>
+                                                            <input type="text" name="name" value="1">
+                                                        <button class="minus-btn" type="button" name="button">
+                                                            <img src="../img/minus.svg" alt="" />
+                                                        </button>
+                                                     </div>
+    
+                                                             <div class="total-price">$849</div>
+                                                    </div>
+    
+    
+    
+                                                    <div class="spitem">
+                                                     <div class="spimage">
+                                                         <img src="../img/item-3.png" alt="" />
+                                                     </div>
+    
+                                                     <div class="spdescription">
+                                                        <span>Common Projects</span>
+                                                        <span>Bball High</span>
+                                                        <span>White</span>
+                                                     </div>
+    
+                                                    <div class="spquantity">
+                                                        <button class="plus-btn" type="button" name="button">
+                                                            <img src="../img/plus.svg" alt="" />
+                                                        </button>
+                                                            <input type="text" name="name" value="1">
+                                                        <button class="minus-btn" type="button" name="button">
+                                                            <img src="../img/minus.svg" alt="" />
+                                                        </button>
+                                                     </div>
+    
+                                                             <div class="total-price">$449</div>
+                                                    </div>
+    
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </form>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- end nav -->
+                    </div>
+                    <!-- end container -->
                 </div>
-                <!-- end container -->
+                <!-- end menubar -->
+        </nav>
+        <!-- begin header -->
+        <header>
+            <div id="my-carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#my-carousel" data-slide-to="0" aria-current="location"></li>
+                    <li data-target="#my-carousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="../img/home.gif" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Title</h5>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/sale.png" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Title</h5>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/home2.png" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Title</h5>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#my-carousel" data-slide="prev" role="button">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#my-carousel" data-slide="next" role="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <!-- end menubar -->
         </header>
-
-        <div class="container text-center present">
-            <h2 class="mainLogo">Coder 2019</h2>
-            <button class="btn btn-light">Giày Nam</button>
-            <button class="btn btn-light">Giày Nữ</button>
-        </div>
-        <!-- end container -->
+        <!-- end header -->
     </div>
     <!-- end bgtop -->
 
     <!-- begin content  -->
-    <div class="content">
-        <div class="container text-center">
-            <h3 class="title">Giày Boots</h3>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/boot1.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày Boot Nữ BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+    <section>
+        <div class="content">
+            <div class="container text-center">
+                <h3 class="title">Giày Boots</h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/boot1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày Boot Nữ BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/boot1.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày Boot Nữ BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/boot1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày Boot Nữ BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/boot1.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày Boot Nữ BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/boot1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày Boot Nữ BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- end row     -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="Giayboot.html" target="_blank" class="btn btn-light">Xem tất cả sản phẩm</a>
+                    </div>
+                    <!-- end btn -->
                 </div>
-                <!-- end row     -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <a href="Giayboot.html" target="_blank" class="btn btn-light">Xem tất cả sản phẩm</a>
-                </div>
-                <!-- end btn -->
             </div>
+            <!-- end container-fluid -->
         </div>
-        <!-- end container-fluid -->
-    </div>
-    <!-- end content -->
-    <button class="btnup btn">^</button>
-
-    <div class="content">
-        <div class="container text-center">
-            <h3 class="title">Giày Thể Thao</h3>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/sport1.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày thể thao Nam BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+        <!-- end content -->
+        <button class="btnup btn">^</button>
+    
+        <div class="content">
+            <div class="container text-center">
+                <h3 class="title">Giày Thể Thao</h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/sport1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày thể thao Nam BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/sport1.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/sport1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/sport1.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày thể thao BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/sport1.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày thể thao BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- end row     -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="Sport.html" target="_blank" class="btn btn-light">Xem tất cả sản phẩm</a>
+                    </div>
+                    <!-- end btn -->
                 </div>
-                <!-- end row     -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <a href="Sport.html" target="_blank" class="btn btn-light">Xem tất cả sản phẩm</a>
-                </div>
-                <!-- end btn -->
             </div>
+            <!-- end container-fluid -->
         </div>
-        <!-- end container-fluid -->
-    </div>
-    <!-- end content -->
-
-    <div class="content">
-        <div class="container text-center">
-            <h3 class="title">Sandal</h3>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/sandal.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày thể thao Nam BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+        <!-- end content -->
+    
+        <div class="content">
+            <div class="container text-center">
+                <h3 class="title">Sandal</h3>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/sandal.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày thể thao Nam BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/sandal.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/sandal.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày thể thao Nữ BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                    <div class="card">
-                        <img class="card-img-top" src="../img/sandal.jpg" alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Giày thể thao BO-113</h4>
-                            <p class="card-text">245.000 VND</p>
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="../img/sandal.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Giày thể thao BO-113</h4>
+                                <p class="card-text">245.000 VND</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- end row     -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                        <a href="Sandal.html" target="_blank" class="btn btn-light">Xem tất cả sản phẩm</a>
+                    </div>
+                    <!-- end btn -->
                 </div>
-                <!-- end row     -->
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <a href="Sandal.html" target="_blank" class="btn btn-light">Xem tất cả sản phẩm</a>
-                </div>
-                <!-- end btn -->
             </div>
+            <!-- end container-fluid -->
         </div>
-        <!-- end container-fluid -->
-    </div>
-    <!-- end content -->
+        <!-- end content -->
+    </section>
+    <!-- end section -->
 
     
     <!-- begin footer -->
