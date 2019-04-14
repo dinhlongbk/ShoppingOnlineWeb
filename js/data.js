@@ -44,8 +44,8 @@ function Pager(tableName, itemsPerPage) {
         let newPageAnchor = $("#page" + this.currentPage);
         newPageAnchor.addClass("active");
 
-        var from = (pageNumber - 1) * itemsPerPage;
-        var to = from + itemsPerPage - 1;
+        let from = (pageNumber - 1) * itemsPerPage;
+        let to = from + itemsPerPage - 1;
         this.showRecords(from, to);
     };
 
@@ -62,7 +62,7 @@ function Pager(tableName, itemsPerPage) {
 
     this.init = function() {
         rows = $("#list-product > div");
-        var records = rows.length;
+        let records = rows.length;
         this.pages = Math.ceil(records / itemsPerPage);
         this.inited = true;
     };
@@ -169,7 +169,21 @@ function showProductsByType(parent, type){
         if (product.loai == type){
             let element =  '<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">' + 
                             '<div class="card">' +
-                                '<img class="card-img-top hieuung" src="' + product.hinhAnh + '" alt="image product">' +
+                                '<img class="card-img-top hieuung" data-toggle="modal" data-target="#productModal" src="' + product.hinhAnh + '" alt="image product">' +
+                                '<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">' +
+                                    ' <div class="modal-dialog" role="document">' +
+                                        '<div class="modal-content">' +
+                                            '<form class="text-center">' +
+                                                '<h3>Chi tiết sản phẩm</h3>' +
+                                                '<img class="" data-toggle="modal" data-target="#productModal" src="' + product.hinhAnh + '" alt="image product">' +
+                                                '<p>' + product.tenSanPham + '</p>' +
+                                                '<p class="text-danger"> Giá:' + product.giaTien + '<sup>đ</sup></p>' +
+                                                '<p>Màu:'+ product.mauSac + '</p>' +
+                                                '<p>Cỡ giày: '+ product.kichThuoc+'</p>' +
+                                            '</form>' +
+                                        '</div>' +
+                                    '</div>' +
+                                '</div>' +
                                 '<i class="fa fa-shopping-cart" aria-hidden="true"></i>' +
                                 '<div class="card-body">' +
                                     '<p>' + product.tenSanPham + '</p>' +

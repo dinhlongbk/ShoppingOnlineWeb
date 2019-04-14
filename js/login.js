@@ -58,4 +58,12 @@ $(document).ready(function(){
             }
         }
     });
+
 });
+
+let submitData = () => {
+    if($('#emailLogin').val() === "admin@gmail.com" && $('#passwordLogin').val() === "1")
+        location.href = "admin.html";
+    else
+        console.log("Sai");
+}

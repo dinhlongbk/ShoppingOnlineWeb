@@ -23,179 +23,44 @@
 <body>
     <div class="bgtop">
         <!-- NAVIGATION BAR -->
-        <nav class="menu">
-                <div class="header">
-                    <div class="container-fluid top">
-                        <div class="row">
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                <div class="leftheader text-left">
-                                    <i class="fas fa-map-marker-alt"></i> Việt Nam
-                                    <i class="fas fa-phone"></i> +84 1900 1000
-                                </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand pl-lg-4" href="index.html">Buffalo Coder</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pl-lg-4" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Trang Chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Khuyenmai.html">Khuyến mãi</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giày Nam</a>
+                            <div class="dropdown-menu bg-secondary" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="Sandal.html">Sandal</a>
+                                    <a class="dropdown-item" href="Sport.html">Giày thể thao</a>
+                                    <a class="dropdown-item" href="Giayboot.html">Giày Boot</a>
                             </div>
-                            <!-- end col -->
-    
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                                <h3 class="logo text-center">
-                                    Buffalo Coder
-                                </h3>
-                                <!-- end logo -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giày Nữ</a>
+                            <div class="dropdown-menu bg-secondary" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="Sandal.html">Sandal</a>
+                                    <a class="dropdown-item" href="Sport.html">Giày thể thao</a>
+                                    <a class="dropdown-item" href="Giayboot.html">Giày Boot</a>
                             </div>
-                            <!-- end col -->
-                        </div>
-                        <!-- end row -->
-                    </div>
-                    <!-- end cotainer-fluid -->
-                </div>
-                <!-- end header -->
-    
-                <div class="menubar" id="mymenubar">
-                    <div class="container">
-                        <nav class="navbar navbar-expand-sm navbar-color navbar-dark">
-                            <button class="btnmau navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav justify-content-center">
-                                    <li class="nav-item motphantu declick" data-hienlen="all">
-                                        <a class="nav-link" href="index.html">Trang chủ</a>
-                                    </li>
-                                    <li class="nav-item motphantu declick" data-hienlen="tintuc">
-                                        <a class="nav-link" href="Khuyenmai.html">Khuyến mãi</a>
-                                    </li>
-                                    <li class="nav-item motphantu declick" data-hienlen="men">
-                                        <a class="nav-link" href="#">Giày Nam</a>
-                                        <div class="list" id="men">
-                                            <ul class="list-group">
-                                                <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
-                                                <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
-                                                <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item motphantu declick" data-hienlen="women">
-                                        <a class="nav-link" href="#">Giày nữ</a>
-                                        <div class="list" id="women">
-                                            <ul class="list-group">
-                                                <li class="list-group-item"><a href="Giayboot.html">Giày Boot</a></li>
-                                                <li class="list-group-item"><a href="Sandal.html">Sandal</a></li>
-                                                <li class="list-group-item"><a href="Sport.html">Giày thể thao</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item motphantu declick" data-hienlen="about">
-                                        <a class="nav-link" href="About.html">About</a>
-                                    </li>
-                                    <li class="login nav-item">
-                                        <a class="nav-link" href="login.html">Đăng nhập</a>
-                                    </li>
-                                    <li class="ip nav-item">
-                                        <a class="nav-link"data-toggle="modal" data-target="#modal-register">Giỏ Hàng</a>
-                                    </li>
-                            </form>
-                                <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <form method="POST" id="form-register" autocomplete="off">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title text-center">Shopping Cart</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <!-- Product #1 -->
-                                                   <div class="spitem">
-                                                     <div class="spimage">
-                                                         <img src="../img/item-1.png" alt="" />
-                                                     </div>
-    
-                                                     <div class="spdescription">
-                                                        <span>Common Projects</span>
-                                                        <span>Bball High</span>
-                                                        <span>White</span>
-                                                     </div>
-    
-                                                    <div class="spquantity">
-                                                        <button class="plus-btn" type="button" name="button">
-                                                            <img src="../img/plus.svg" alt="" />
-                                                        </button>
-                                                            <input type="text" name="name" value="1">
-                                                        <button class="minus-btn" type="button" name="button">
-                                                            <img src="../img/minus.svg" alt="" />
-                                                        </button>
-                                                     </div>
-    
-                                                             <div class="total-price">$549</div>
-                                                    </div>
-    
-    
-                                                    <div class="spitem">
-                                                     <div class="spimage">
-                                                         <img src="../img/item-2.png" alt="" />
-                                                     </div>
-    
-                                                     <div class="spdescription">
-                                                        <span>Common Projects</span>
-                                                        <span>Bball High</span>
-                                                        <span>White</span>
-                                                     </div>
-    
-                                                    <div class="spquantity">
-                                                        <button class="plus-btn" type="button" name="button">
-                                                            <img src="../img/plus.svg" alt="" />
-                                                        </button>
-                                                            <input type="text" name="name" value="1">
-                                                        <button class="minus-btn" type="button" name="button">
-                                                            <img src="../img/minus.svg" alt="" />
-                                                        </button>
-                                                     </div>
-    
-                                                             <div class="total-price">$849</div>
-                                                    </div>
-    
-    
-    
-                                                    <div class="spitem">
-                                                     <div class="spimage">
-                                                         <img src="../img/item-3.png" alt="" />
-                                                     </div>
-    
-                                                     <div class="spdescription">
-                                                        <span>Common Projects</span>
-                                                        <span>Bball High</span>
-                                                        <span>White</span>
-                                                     </div>
-    
-                                                    <div class="spquantity">
-                                                        <button class="plus-btn" type="button" name="button">
-                                                            <img src="../img/plus.svg" alt="" />
-                                                        </button>
-                                                            <input type="text" name="name" value="1">
-                                                        <button class="minus-btn" type="button" name="button">
-                                                            <img src="../img/minus.svg" alt="" />
-                                                        </button>
-                                                     </div>
-    
-                                                             <div class="total-price">$449</div>
-                                                    </div>
-    
-                                                </div>
-    
-                                            </div>
-                                        </div>
-                                    </form>
-                                </ul>
-                            </div>
-                        </nav>
-                        <!-- end nav -->
-                    </div>
-                    <!-- end container -->
-                </div>
-                <!-- end menubar -->
-        </nav>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">About</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a class="nav-link" href="login.html">Đăng nhập</a>
+                    </form>
+            </nav>
         <!-- begin header -->
         <header>
             <div id="my-carousel" class="carousel slide" data-ride="carousel">
@@ -239,10 +104,10 @@
                         </span>
 
                         <span class="txt1 p-b-11">
-                            Tên tài khoản
+                            Email
                         </span>
                         <div class="wrap-input100 validate-input m-b-36" data-validate="Username is required">
-                            <input class="input100" type="text" name="username" id="username">
+                                <input type="email" class="form-control input100" id="emailLogin" name="email" required>
                             <span class="focus-input100"></span>
                         </div>
 
@@ -253,7 +118,7 @@
                             <span class="btn-show-pass">
                                 <i class="fa fa-eye"></i>
                             </span>
-                            <input class="input100" type="password" name="pass" id="password">
+                            <input class="input100" type="password" name="pass" id="passwordLogin" required>
                             <span class="focus-input100"></span>
                         </div>
 
@@ -273,7 +138,7 @@
                         </div>
 
                         <div class="container-login100-form-btn">
-                            <button class="login100-form-btn" type="button" id="login-btn">
+                            <button onclick="submitData()" class="login100-form-btn" type="button" id="login-btn">
                                 Đăng nhập
                             </button>
                         </div>
@@ -334,7 +199,7 @@
                             <div id="btn-action">
                                 <!--gốc-->
                                 <button class="login100-form-btn btn btn-primary" type="button" id="register-btn"
-                                    data-toggle="modal" data-target="#modal-register">
+                                    data-toggle="modal" data-target="#modalRegister">
                                     Đăng ký
                                 </button>
                                 <!--gốc-->
@@ -342,12 +207,12 @@
                             </div>
                         </div>
                     </form>
-                    <div class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal fade" id="modalRegister" aria-labelledby="modalRegister" tabindex="-1" role="dialog" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <form method="POST" id="form-register" autocomplete="off">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-center">Đăng kí</h5>
+                                        <h5 class="modal-title text-center" id="modalRegister">Đăng kí</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>

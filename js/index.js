@@ -10,13 +10,9 @@ $(document).ready(() => {
     });
     // end
 
-    // reponsive menubar
-    hieuungmenu();
-
-
 });
 // menuscroll
-var scrollmenu = () => {
+let scrollmenu = () => {
         $(window).scroll(() => {
             var pos = $(window).scrollTop();
             if(pos>60)
@@ -31,38 +27,4 @@ var scrollmenu = () => {
                 $('.btnup').removeClass('btnshow');
                 // end nút up
         });
-}
-// reponsive menubar
-let hieuungmenu = () => {
-var dehover = $('.declick');
-var x = $(window).width();
-    if(x<1300)
-    {
-        // click menu
-        for(var i = 0; i<dehover.length; i++)
-        {
-            $(dehover[i]).click(function () {
-                var dropdown = $(this).attr('data-hienlen');
-                var nut = '#'+ dropdown;
-                $('.list').removeClass('showlist');
-                $(nut).toggleClass('showlist');
-            });
-        }
-        //end click menu
-        document.getElementById('mymenubar').className = "reponsivemenu";
-    }
-    else
-    {
-        // hieu ưng hover menu
-        for(var i = 0; i<dehover.length; i++)
-        {
-            $(dehover[i]).hover(function () {
-                var dropdown = $(this).attr('data-hienlen');
-                var nut = '#'+ dropdown;
-                $(nut).toggleClass('showlist');
-            });
-        }
-        // end hover menu
-        document.getElementById('mymenubar').className = "menubar";
-    }
 }
